@@ -351,6 +351,7 @@ main {
 
 .chat-notice-close-button{
     cursor: pointer;
+    background-color: #cdecf0;
     color: #000080;
     font-size: 20px;
 }
