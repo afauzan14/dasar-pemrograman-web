@@ -316,3 +316,130 @@ main {
     font-weight: 300;
     font-size: 13px;
 }
+
+.chat-wrapper{
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-notice{
+    background-color: #cdecf0;
+    padding: 12px;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    backdrop-filter: blur(12px);
+    max-width: 320px;
+}
+
+.chat-notice-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.chat-notice-title{
+    color: #000080;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.chat-notice-close-button{
+    cursor: pointer;
+    color: #000080;
+    font-size: 20px;
+}
+
+.chat-notice-message{
+    color: #000000;
+}
+
+.hidden{
+    display: none;
+}
+
+.chat-button{
+    background-color: #cdecf0;
+    color: #000080;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 26px;
+    backdrop-filter: blur(12px);
+    border-radius: 50%;
+    align-self: flex-end;
+}
+
+.chat-box{
+    width: 320px;
+    background-color: #cdecf0;
+    backdrop-filter: blur(12px);
+    padding: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.chat-box-header{
+    display: flex;
+    gap: 8px;
+    padding: 8px;
+    background-color: #F0F8FF;
+    color: #000000;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.chat-box-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-block: 12px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.chat-box-actions{
+    display: flex;
+    background-color: #F0F8FF;
+    justify-content: space-between;
+    color: #efeeee;
+    border-radius: 8px;
+    gap: 8px;
+}
+
+.chat-box-input{
+    flex-grow: 1;
+    padding: 6px 12px;
+}
+
+.chat-box-input::placeholder{
+    color: #000000;
+}
+
+.chat-box-submit{
+    padding-inline: 12px;
+    cursor: pointer;
+}
+
+.chat-box-user-bubble{
+    background-color: #f7941e;
+    border-radius: 8px;
+    border-bottom-right-radius: 0;
+    padding: 6px 12px;
+    max-width: 75%;
+    align-self: flex-end;
+}
+
+.chat-box-ai-bubble{
+    background-color: #66aff7;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    color: #000000;
+    padding: 6px 12px;
+    max-width: 75%;
+    align-self: flex-start;
+}
